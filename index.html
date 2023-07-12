@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+
+    <style type="text/css">
+        body {
+             margin-top: 0px;
+             margin-right: 0px;
+             margin-bottom: 0px;
+             margin-left: 0px
+        }
+   </style>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <div class="body-container">
+
+        <div class="card-container">
+            <img class='splash' src="./splash.png"/>
+            <div class="card-body">
+                <img class="logo" src="sparrow.png">
+                <h1>Name</h1>
+            </div>
+        </div>
+
+
+        <div class="form-container">
+
+            <div class="header">
+                <h3>This is not a real online service. However, signing up today is <i>guaranteed</i> to change your life! Have faith in the process and sign up right <i>now</i>!</h3>
+                <h3>You <i>will not</i> regret it!</h3>
+            </div>
+
+            <div class="fields">
+                <h3>Take the step!</h3>
+                <form action="" method="post">
+                    <div class="fields-container">
+                        <div class="form-col">
+                            <label for="first_name">First Name*
+                                <input type="text" id="first_name" name="first_name" minlength="2" maxlength="20" requried>
+                            </label>
+                            <div class="first-error"></div>
+                            
+                            <label for="user_email">E-Mail*
+                                <input requried type="email" id="user_email" placeholder="you@example.com" name="email">
+                            </label>
+                            <div class="email-error"></div>
+
+                            <label id='pass' for="user_password">Password*
+                                <input requried type="password" id="user_password" name="password" minlength="1" maxlength="20">
+                            </label>
+                            <div class="pass-error"></div>
+                        </div>
+
+                        <div class="form-col">
+                            <label for="last_name">Last Name*
+                                <input requried type="text" id="last_name" name="last_name" minlength="2" maxlength="20">
+                            </label>
+                            <div class="last-error"></div>
+
+                            <label for="phone_number">Phone*
+                                <input type="number" id="phone_number" name="phone" min="1">
+                            </label>
+                            <div class="phone-error"></div>
+
+                            <label id='confirm' for="confirm_password">Confirm Password*
+                                <input requried type="password" id="confirm_password" name="password" minlength="1" maxlength="20">
+                            </label>
+                            <div class="pass-error"></div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+
+            <div class="create">
+                <button type="button submit" class="btn btn-primary btn-lg" style="
+                --bs-btn-padding-y: .6rem; 
+                --bs-btn-padding-x: 4rem; 
+                --bs-btn-font-weight: 600;
+                --bs-btn-font-size: 28px;
+                --bs-btn-bg: #a86add;
+                --bs-btn-border-color: #a86add;
+                --bs-btn-hover-bg: #8549a7;
+                --bs-btn-hover-border-color: #8549a7;
+                --bs-btn-active-bg:	#634087;
+                --bs-btn-active-border-color:#634087;">Create Account</button>
+                <p>Already have an account? <a href=''>Log in</a></p>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

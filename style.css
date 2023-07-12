@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css2?family=Belanosima&family=Pacifico&family=Play&family=Roboto+Mono:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Paprika&display=swap');
+
+.body-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+}
+
+/* image */
+.card-container {
+    flex: 1 1 0;
+    position: relative;
+    width: 100%;
+}
+
+.splash {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+}
+
+.card-body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+    position: absolute;
+    width: 100%;
+    height: 11rem;
+    background: black;
+    opacity: 0.6;
+    text-align: center;
+    top: 11rem;
+}
+
+.logo {
+    height: 150px;
+}
+
+.card-body h1 {
+    color: white;
+    font-family: 'Paprika'; 
+    font-size: 75px;
+}
+
+/* form */
+.form-container {
+    flex: 1.7 1 0;
+
+    display: flex;
+    flex-direction: column;
+}
+
+/* heading */
+.header {
+    background-color: #121212;
+    flex: 1 1 0;
+    padding: 0 3rem 3rem 3rem;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: left;
+    gap: 1rem;
+}
+
+.header > h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 1.7rem;
+    color: white;
+}
+
+/* form field */
+.fields {
+    padding: 2rem 3rem 2rem 3rem;
+    flex: 1 1 0;
+    background-color: #f6ccf0;
+}
+
+.fields > h3 {
+    font-family: 'Roboto Mono', monospace;
+    font-size: 2rem;
+    padding-bottom: 1.5rem;
+}
+
+.fields-container {
+    display: flex;
+    flex-direction: row;
+    gap: 4rem;
+    padding-bottom: 1rem;
+}
+
+.form-col {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.form-col div {
+    line-height: 0;
+    font-size: 13px;
+}
+
+input {
+    padding: 7px 5px 7px 5px;
+    font-weight: 500;
+    width: 22rem;
+    display: block;
+    border-radius: 7px;
+}
+
+input:focus {
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+label {
+    font-family: 'Roboto Mono', monospace;
+}
+
+/* create button */
+.create {       
+    box-shadow: inset 0 7px 9px -7px darkviolet;
+    background-color: #121212;
+    padding-left: 3rem;
+    padding-top: 3rem;
+    flex: 1 1 0; 
+}
+
+button {
+    font-family: 'Roboto Mono', monospace;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.4);
+}
+
+.create p {
+    font-family: 'Roboto Mono', monospace;
+    line-height: 5rem;
+    font-size: 20px;
+    color: white;
+}
+
+p a {
+    font-family: 'Roboto Mono', monospace;
+    text-decoration: none;
+    color: #a86add;
+}
+
+a:hover {
+    color: #8549a7;
+}
+
+a:active {
+    color:#634087;
+}
+
+@media (max-width: 1300px) {
+    .card-container {
+        display: none;
+    }
+}
