@@ -15,10 +15,8 @@ createButton.addEventListener('click', () => {
     let pNum = document.querySelector('#phone_number');
     let pNumError = document.querySelector('.phone-error');
 
-
-
-    if (password.value !== confirm.value) {
-        password.style.border = 'red';
+    if (password.value !== confirm.value || password.value === '') {
+        password.style.borderColor = 'red';
         confirm.style.borderColor = 'red';
         passwordError[0].textContent = 'Passwords do not match';
         passwordError[0].style.color = 'red';
@@ -29,24 +27,6 @@ createButton.addEventListener('click', () => {
         confirm.style.borderColor = '#634087';
         passwordError[0].textContent = '';
         passwordError[1].textContent = ''; 
-    }
-
-    if (password.value === '') {
-        password.style.borderColor = 'red';
-        passwordError[0].textContent = 'Invalid Password';
-        passwordError[0].style.color = 'red';
-    } else {
-        password.style.borderColor = '#634087';
-        passwordError[0].textContent = '';
-    }
-
-    if (confirm.value === '') {
-        confirm.style.borderColor = 'red';
-        passwordError[1].textContent = 'Invalid Password';
-        passwordError[1].style.color = 'red';
-    } else {
-        confirm.style.borderColor = '#634087';
-        passwordError[1].textContent = '';
     }
 
     if (firstName.value.length === 0) {
@@ -76,7 +56,7 @@ createButton.addEventListener('click', () => {
         eMailError.textContent = '';
     }
 
-    if (pNum.value === '') {
+    if (pNum.value === '' || pNum.value.length != 10) {
         pNum.style.borderColor = 'red';
         pNumError.style.color = 'red';
         pNumError.textContent = 'Invalid Phone Number';
